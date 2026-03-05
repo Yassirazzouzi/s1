@@ -30,11 +30,11 @@ export function Header() {
         <div className="animate-marquee inline-flex py-2">
           <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ LIVRAISON GRATUITE</span>
           <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ QUALITÉ PREMIUM</span>
-          <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ WHATSAPP: 0660628321</span>
+          <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ WHATSAPP: 0713239720</span>
           <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ RETOUR FACILE</span>
           <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ LIVRAISON GRATUITE</span>
           <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ QUALITÉ PREMIUM</span>
-          <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ WHATSAPP: 0660628321</span>
+          <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ WHATSAPP: 0713239720</span>
           <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ RETOUR FACILE</span>
           <span className="mx-8 text-xs sm:text-sm font-medium tracking-wide">✓ LIVRAISON GRATUITE</span>
         </div>
@@ -57,7 +57,7 @@ export function Header() {
           {/* Center - Logo */}
           <Link href="/" className="absolute left-1/2 -translate-x-1/2">
             <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground">
-              FATIN<span className="font-light">SHOES</span>
+              SBARDILTK<span className="font-light">VIBE</span>
             </h1>
           </Link>
 
