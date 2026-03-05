@@ -6,7 +6,7 @@ export const reviews: Review[] = [
     customerName: "Wiam",
     avatar: "/moroccan-woman-avatar.jpg",
     rating: 5,
-    comment: "J'aime beaucoup la qualité et le confort de ces sneakers, merci FatinShoes!",
+    comment: "J'aime beaucoup la qualité et le confort de ces sneakers, merci sbardiltkvibe!",
     date: "2024-11-20",
   },
   {
@@ -22,7 +22,7 @@ export const reviews: Review[] = [
     customerName: "Sara",
     avatar: "/young-woman-avatar-smile.jpg",
     rating: 5,
-    comment: "Les talons sont magnifiques et super confortables. Je recommande vivement FatinShoes",
+    comment: "Les talons sont magnifiques et super confortables. Je recommande vivement sbardiltkvibe",
     date: "2024-11-15",
   },
   {

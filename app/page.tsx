@@ -122,7 +122,7 @@ export default function HomePage() {
                   NOTRE HISTOIRE
                 </span>
                 <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                  Avec FatinShoes
+                  Avec Sbardiltk vibe
                   <br />
                   <span className="text-accent">Marchez avec style et confiance.</span>
                 </h2>

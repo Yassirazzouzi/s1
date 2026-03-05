@@ -3,7 +3,7 @@ import type { Product } from "../types"
 export const products: Product[] = [
   {
     id: "1",
-    name: "Sneakers Blanc Premium",
+    name: "Sneakers Blanc ",
     description:
       "Sneakers élégantes et confortables en cuir blanc premium. Design épuré et intemporel, parfait pour tous les styles.",
     price: 450,
@@ -25,7 +25,7 @@ export const products: Product[] = [
   },
   {
     id: "3",
-    name: "Boots Cuir Noir",
+    name: "Samba",
     description:
       "Boots en cuir véritable noir, doublées intérieurement pour plus de confort. Intemporel et polyvalent.",
     price: 650,
