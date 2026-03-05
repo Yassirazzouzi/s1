@@ -1,0 +1,21 @@
+[
+  {
+    "id": "ORD-1772402861620",
+    "items": [
+      {
+        "productId": "3",
+        "productName": "Boots Cuir Noir",
+        "price": 650,
+        "quantity": 2
+      }
+    ],
+    "customerName": "Yassir El Azzouzi",
+    "phone": "+212628457089",
+    "city": "Fès",
+    "address": "54   زنقة النخيل نرجي ب فاس",
+    "totalPrice": 1300,
+    "status": "pending",
+    "createdAt": "2026-03-01T22:07:41.620Z",
+    "notes": ""
+  }
+]

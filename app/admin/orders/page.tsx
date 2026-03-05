@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { Header } from "@/components/header"
+
+export const dynamic = 'force-dynamic'
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -45,7 +47,9 @@ export default async function AdminOrdersPage() {
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                       <div>
-                        <CardTitle className="text-lg text-foreground">{order.productName}</CardTitle>
+                        <CardTitle className="text-lg text-foreground">
+                          {order.items?.map(i => i.productName).join(', ') || 'Produit inconnu'}
+                        </CardTitle>
                         <p className="text-sm text-muted-foreground mt-1">Commande #{order.id}</p>
                       </div>
                       <OrderStatusBadge status={order.status} />
@@ -75,7 +79,7 @@ export default async function AdminOrdersPage() {
                         <div>
                           <p className="text-sm font-semibold text-foreground mb-1">Détails de la Commande</p>
                           <div className="space-y-1 text-sm text-muted-foreground">
-                            <p>Quantité: {order.quantity}</p>
+                            <p>Quantité: {order.items?.reduce((acc, item) => acc + item.quantity, 0) || 0}</p>
                             <p>
                               Total: <span className="font-semibold text-primary">{order.totalPrice} DH</span>
                             </p>

@@ -16,14 +16,15 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
 
+
       <main className="flex-1">
         <section className="relative h-[80vh] sm:h-[85vh] md:h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/elegant-woman-wearing-gold-jewelry-necklace-close-.jpg"
-              alt="FatinAccessories Collection"
+              src="/elegant-white-sneakers-premium.jpg"
+              alt="FatinShoes Collection Premium"
               fill
-              className="object-cover object-top"
+              className="object-cover object-center"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-b from-foreground/20 via-transparent to-foreground/30" />
@@ -43,14 +44,15 @@ export default function HomePage() {
               Des chaussures stylées et intemporelles qui reflètent votre style unique
             </p>
 
-            <AnimatedButton
-              asChild
-              effect="fill"
-              size="lg"
-              className="px-10 sm:px-12 py-6 sm:py-7 text-sm sm:text-base font-semibold rounded-xl"
-            >
-              <Link href="/products">découvrir</Link>
-            </AnimatedButton>
+            <Link href="/products">
+              <AnimatedButton
+                effect="fill"
+                size="lg"
+                className="px-10 sm:px-12 py-6 sm:py-7 text-sm sm:text-base font-semibold rounded-xl"
+              >
+                Découvrir
+              </AnimatedButton>
+            </Link>
           </div>
 
           {/* Decorative elements */}
@@ -103,9 +105,9 @@ export default function HomePage() {
               <AnimatedButton
                 asChild
                 effect="slide"
-                className="px-10 sm:px-12 py-5 sm:py-6 text-sm font-semibold rounded-lg"
+                className="px-10 sm:px-12 py-5 sm:py-6 text-sm font-semibold rounded-lg w-full sm:w-auto"
               >
-                <Link href="/products">Tout afficher</Link>
+                <Link href="/products" className="flex items-center justify-center">Tout afficher</Link>
               </AnimatedButton>
             </div>
           </div>
@@ -132,9 +134,9 @@ export default function HomePage() {
                 <AnimatedButton
                   asChild
                   effect="glow"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-6 text-sm font-semibold rounded-lg"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-6 text-sm font-semibold rounded-lg w-full sm:w-auto"
                 >
-                  <Link href="/products">
+                  <Link href="/products" className="flex items-center justify-center">
                     Explorer la Collection
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -173,24 +175,24 @@ export default function HomePage() {
         {/* Valentine/Special Collection Banner */}
         <section className="py-14 sm:py-18 md:py-24 bg-muted">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-stretch">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-4 items-stretch">
               {/* Image Side */}
-              <div className="relative aspect-square lg:aspect-auto min-h-[450px] rounded-3xl overflow-hidden shadow-2xl group">
+              <div className="relative aspect-square lg:aspect-auto min-h-[40px] rounded-3xl overflow-hidden shadow-2xl group h-full">
                 <Image
                   src="/elegant-white-sneakers-premium.jpg"
                   alt="Collection Spéciale"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="object-contain object-center lg:object-cover group-hover:scale-105 transition-transform duration-700 p-4 lg:p-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-accent/60 via-accent/20 to-transparent" />
-                <div className="absolute bottom-8 sm:bottom-10 left-8 sm:left-10 right-8 sm:right-10 text-background">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 fill-background" />
-                    <span className="text-lg sm:text-xl font-serif italic">Style</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-accent/80 via-accent/30 to-transparent pointer-events-none" />
+                <div className="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 right-6 sm:right-10 text-background">
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                    <Sparkles className="h-4 w-4 sm:h-6 sm:w-6 fill-background" />
+                    <span className="text-base sm:text-xl font-serif italic">Style</span>
                   </div>
-                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold mb-2">Comfort</h3>
-                  <p className="text-xl sm:text-2xl font-serif italic">Elegance</p>
-                  <p className="text-sm sm:text-base mt-4 opacity-90 max-w-xs">
+                  <h3 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold mb-1 sm:mb-2">Comfort</h3>
+                  <p className="text-lg sm:text-2xl font-serif italic">Elegance</p>
+                  <p className="text-xs sm:text-base mt-2 sm:mt-4 opacity-90 max-w-xs">
                     Chaque pas est une déclaration de style et de confiance!
                   </p>
                 </div>
@@ -207,8 +209,8 @@ export default function HomePage() {
                 <p className="text-muted-foreground mb-8 leading-relaxed text-base sm:text-lg max-w-md">
                   "Trouvez les chaussures parfaites – explorez notre collection exclusive de chaussures premium pour tous les styles."
                 </p>
-                <Link href="/products">
-                  <AnimatedButton effect="shimmer" className="px-8 py-6 text-sm font-semibold rounded-lg w-fit">
+                <Link href="/products" className="w-full sm:w-fit mt-2">
+                  <AnimatedButton effect="shimmer" className="w-full sm:w-fit px-8 py-6 text-sm font-semibold rounded-lg">
                     <Sparkles className="mr-2 h-4 w-4" />
                     Collection Spéciale
                   </AnimatedButton>
@@ -241,9 +243,9 @@ export default function HomePage() {
                 asChild
                 effect="bounce"
                 variant="outline"
-                className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background px-10 sm:px-12 py-5 sm:py-6 text-sm font-semibold rounded-lg bg-transparent"
+                className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background px-10 sm:px-12 py-5 sm:py-6 text-sm font-semibold rounded-lg bg-transparent w-full sm:w-auto"
               >
-                <Link href="/products">
+                <Link href="/products" className="flex items-center justify-center">
                   Voir Toute la Collection
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

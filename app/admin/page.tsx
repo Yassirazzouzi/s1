@@ -1,11 +1,14 @@
 import Link from "next/link"
 import { Header } from "@/components/header"
+
+export const dynamic = 'force-dynamic'
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { getOrders } from "@/lib/actions/orders"
 import { products } from "@/lib/data/products"
 import { Package, ShoppingBag, AlertCircle, TrendingUp } from "lucide-react"
+import { logoutAction } from "./login/actions"
 
 export default async function AdminDashboardPage() {
   const orders = await getOrders()
@@ -20,9 +23,16 @@ export default async function AdminDashboardPage() {
 
       <main className="flex-1 py-12 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="mb-8">
-            <h1 className="font-serif text-3xl md:text-4xl font-bold mb-2 text-foreground">Tableau de Bord Admin</h1>
-            <p className="text-muted-foreground">Gérez vos produits et commandes</p>
+          <div className="mb-8 flex justify-between items-start">
+            <div>
+              <h1 className="font-serif text-3xl md:text-4xl font-bold mb-2 text-foreground">Tableau de Bord Admin</h1>
+              <p className="text-muted-foreground">Gérez vos produits et commandes</p>
+            </div>
+            <form action={logoutAction}>
+              <Button type="submit" variant="outline" className="text-red-600 hover:text-red-700 hover:bg-red-50">
+                Déconnexion
+              </Button>
+            </form>
           </div>
 
           {/* Stats Cards */}
